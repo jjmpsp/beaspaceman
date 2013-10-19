@@ -41,108 +41,23 @@
 
 <div class="row">
 			<ul class="thumbnails" id="caption-hover" type="none">
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-						
-						<img src="static/images/video/poster.jpg" />
-						
-					</div>
-				</li>			
-				
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>						
-						<img src="static/images/video/poster.jpg" />						
-					</div>
-				</li>			
-				
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-						
-						<img src="static/images/video/poster.jpg" />
-						
-					</div>
-				</li>						
-				
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-						
-						<img src="static/images/video/poster.jpg" />
-						
-					</div>
-				</li>			
-				
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>						
-						<img src="static/images/video/poster.jpg" />						
-					</div>
-				</li>			
-				
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-						
-						<img src="static/images/video/poster.jpg" />
-						
-					</div>
-				</li>	
-				
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-						
-						<img src="static/images/video/poster.jpg" />
-						
-					</div>
-				</li>			
-				
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>						
-						<img src="static/images/video/poster.jpg" />						
-					</div>
-				</li>			
-				
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-						
-						<img src="static/images/video/poster.jpg" />
-						
-					</div>
-				</li>	
-				
+
+                <?php
+                    foreach($featuredVideos as $video){
+                        echo '           
+                        <li class="col-md-4">
+                            <div class="thumbnail">
+                                <div class="caption">
+                                <h4>Caption</h4>
+                                <p>sample text</p>
+                                </div>
+                                
+                                <img src="'.$video->thumbnail.'" />
+                                
+                            </div>
+                        </li>';
+                    }
+                ?>
 			</ul>
 		</div>	
 

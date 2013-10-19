@@ -44,6 +44,7 @@ $route['job_search'] = "main/job_search";
 $route['feedback'] = "main/feedback";
 $route['about'] = "main/about";
 $route['test'] = "main/test";
+$route['video'] = "main/video";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

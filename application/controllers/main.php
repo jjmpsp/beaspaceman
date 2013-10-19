@@ -20,7 +20,10 @@ class Main extends CI_Controller {
 	public function index()
 	{
 		$this->load->helper("url");
-		$this->load->view('index');
+		$this->load->model("video");
+		$data["featuredVideos"] = $this->video->get_featured();
+
+		$this->load->view('index', $data);
 	}
 
 	public function feedback()
@@ -33,6 +36,18 @@ class Main extends CI_Controller {
 	{
 		$this->load->helper("url");
 		$this->load->view('about');
+	}
+
+
+	public function video()
+	{
+		$this->load->helper("url");
+		$this->load->model("video");
+
+		$term = $this->input->get('url');
+		$data['videoInfo'] = $this->video->get_video_details($term);
+
+		//$this->load->view('job_search', $data);		
 	}
 
 	public function job_search()
