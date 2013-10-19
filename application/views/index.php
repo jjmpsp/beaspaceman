@@ -18,6 +18,7 @@
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
     <![endif]-->
+
   </head>
   <body>
     <div class="container">
@@ -25,7 +26,7 @@
 		<div class="row">
 				<div class="search">
 					<div class="form-group">
-						<input class="form-control" type="search" placeholder="placeholder">
+						<input class="form-control" type="search" id="search_box" placeholder="placeholder">
 						<span class="input-icon fui-search"></span>
 					</div>		
 				</div>
@@ -59,5 +60,26 @@
     <script src="static/js/flatui-radio.js"></script>
     <script src="static/js/jquery.tagsinput.js"></script>
     <script src="static/js/jquery.placeholder.js"></script>
+
+    <!-- might wanna clean this up when we have an MVP -->
+    <script>
+        $(document).ready(function(){
+            var srcText = "What do you want to be when you're older?";
+            var i = 0;
+            var result = srcText[i];
+            setInterval(function() {
+                if(i == srcText.length -1) {
+                    clearInterval(this);
+                    return;
+                };
+                i++;
+                console.log(srcText[i]);
+                result += srcText[i].replace("\n", "<br />");
+                $("#search_box").attr("placeholder", result);
+            },
+            30);
+        })
+    </script>
+
   </body>
 </html>
