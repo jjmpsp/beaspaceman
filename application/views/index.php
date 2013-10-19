@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
-    <link href="<?php echo base_url() ?>static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Loading Flat UI -->
-    <link href="<?php echo base_url() ?>static/css/flat-ui.css" rel="stylesheet">
-    <link href="<?php echo base_url() ?>static/css/style.css" rel="stylesheet">
+    <link href="static/css/flat-ui.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -47,122 +47,122 @@
 						<h4>Caption</h4>
 						<p>sample text</p>
 						</div>
-						
+
 						<img src="static/images/video/poster.jpg" />
-						
+
 					</div>
-				</li>			
-				
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>						
-						<img src="static/images/video/poster.jpg" />						
-					</div>
-				</li>			
-				
+				</li>
+
 				<li class="col-md-4">
 					<div class="thumbnail">
 						<div class="caption">
 						<h4>Caption</h4>
 						<p>sample text</p>
 						</div>
-						
 						<img src="static/images/video/poster.jpg" />
-						
 					</div>
-				</li>						
-				
+				</li>
+
 				<li class="col-md-4">
 					<div class="thumbnail">
 						<div class="caption">
 						<h4>Caption</h4>
 						<p>sample text</p>
 						</div>
-						
+
 						<img src="static/images/video/poster.jpg" />
-						
+
 					</div>
-				</li>			
-				
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>						
-						<img src="static/images/video/poster.jpg" />						
-					</div>
-				</li>			
-				
+				</li>
+
 				<li class="col-md-4">
 					<div class="thumbnail">
 						<div class="caption">
 						<h4>Caption</h4>
 						<p>sample text</p>
 						</div>
-						
+
 						<img src="static/images/video/poster.jpg" />
-						
+
 					</div>
-				</li>	
-				
+				</li>
+
 				<li class="col-md-4">
 					<div class="thumbnail">
 						<div class="caption">
 						<h4>Caption</h4>
 						<p>sample text</p>
 						</div>
-						
 						<img src="static/images/video/poster.jpg" />
-						
 					</div>
-				</li>			
-				
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>						
-						<img src="static/images/video/poster.jpg" />						
-					</div>
-				</li>			
-				
+				</li>
+
 				<li class="col-md-4">
 					<div class="thumbnail">
 						<div class="caption">
 						<h4>Caption</h4>
 						<p>sample text</p>
 						</div>
-						
+
 						<img src="static/images/video/poster.jpg" />
-						
+
 					</div>
-				</li>	
-				
+				</li>
+
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+
+						<img src="static/images/video/poster.jpg" />
+
+					</div>
+				</li>
+
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+						<img src="static/images/video/poster.jpg" />
+					</div>
+				</li>
+
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+
+						<img src="static/images/video/poster.jpg" />
+
+					</div>
+				</li>
+
 			</ul>
-		</div>	
+		</div>
 
     </div>
     <!-- /.container -->
 
 
     <!-- Load JS here for greater good =============================-->
-    <script src="<?php echo base_url() ?>static/js/jquery-1.8.3.min.js"></script>
-    <script src="<?php echo base_url() ?>static/js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="<?php echo base_url() ?>static/js/jquery.ui.touch-punch.min.js"></script>
-    <script src="<?php echo base_url() ?>static/js/bootstrap.min.js"></script>
-    <script src="<?php echo base_url() ?>static/js/bootstrap-select.js"></script>
-    <script src="<?php echo base_url() ?>static/js/bootstrap-switch.js"></script>
-    <script src="<?php echo base_url() ?>static/js/flatui-checkbox.js"></script>
-    <script src="<?php echo base_url() ?>static/js/flatui-radio.js"></script>
-    <script src="<?php echo base_url() ?>static/js/jquery.tagsinput.js"></script>
-    <script src="<?php echo base_url() ?>static/js/jquery.placeholder.js"></script>
-    <script src="<?php echo base_url() ?>static/js/grid-caption.js"></script>
-    <script src="<?php echo base_url() ?>static/js/bootstrap-typeahead.js"></script>
+    <script src="static/js/jquery-1.8.3.min.js"></script>
+    <script src="static/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="static/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap-select.js"></script>
+    <script src="static/js/bootstrap-switch.js"></script>
+    <script src="static/js/flatui-checkbox.js"></script>
+    <script src="static/js/flatui-radio.js"></script>
+    <script src="static/js/jquery.tagsinput.js"></script>
+    <script src="static/js/jquery.placeholder.js"></script>
+    <script src="static/js/grid-caption.js"></script>
+    <script src="static/js/bootstrap-typeahead.js"></script>
 
     <!-- might wanna clean this up when we have an MVP -->
     <script>
