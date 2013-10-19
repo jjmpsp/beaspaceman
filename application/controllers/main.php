@@ -32,7 +32,12 @@ class Main extends CI_Controller {
 	public function job_search()
 	{
 		$this->load->helper("url");
-		$this->load->view('job_search');
+		$this->load->model("jobs");
+
+		$term = $this->input->get('job_name');
+		$data['allJobs'] = $this->jobs->get_last_ten_entries();
+
+		$this->load->view('job_search');		
 	}
 }
 
