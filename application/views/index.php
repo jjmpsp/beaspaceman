@@ -74,6 +74,75 @@
 						
 					</div>
 				</li>						
+				
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+						
+						<img src="static/images/video/poster.jpg" />
+						
+					</div>
+				</li>			
+				
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>						
+						<img src="static/images/video/poster.jpg" />						
+					</div>
+				</li>			
+				
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+						
+						<img src="static/images/video/poster.jpg" />
+						
+					</div>
+				</li>	
+				
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+						
+						<img src="static/images/video/poster.jpg" />
+						
+					</div>
+				</li>			
+				
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>						
+						<img src="static/images/video/poster.jpg" />						
+					</div>
+				</li>			
+				
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+						
+						<img src="static/images/video/poster.jpg" />
+						
+					</div>
+				</li>	
+				
 			</ul>
 		</div>	
 
