@@ -68,15 +68,16 @@
             var i = 0;
             var result = srcText[i];
             setInterval(function() {
-                    if(i == srcText.length) {
-                        clearInterval(this);
-                        return;
-                    };
-                    i++;
-                    result += srcText[i].replace("\n", "<br />");
-                    $("#search_box").attr("placeholder", result);
+                if(i == srcText.length -1) {
+                    clearInterval(this);
+                    return;
+                };
+                i++;
+                console.log(srcText[i]);
+                result += srcText[i].replace("\n", "<br />");
+                $("#search_box").attr("placeholder", result);
             },
-            50);
+            30);
         })
     </script>
 
