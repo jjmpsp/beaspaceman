@@ -26,8 +26,8 @@
 		<div class="row">
 				<div class="search">
 					<div class="form-group">
-                        <form action="jobs" method="GET">
-                            <input class="form-control" type="search" id="search_box" name="job_name" placeholder="placeholder">
+                        <form action="job_search" method="GET">
+                            <input class="form-control input-hg" type="search" id="search_box" name="job_name" placeholder="placeholder">
                             <span class="input-icon fui-search"></span>
                         </form>
 					</div>
@@ -35,8 +35,10 @@
 		</div>
 		<div class="row">
 			<div class="intro">
-				<p></p>
-			</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			error: The following untracked working tree files would be overwritten by merge:
+	application/config/config.php
+</div>
 		</div>
 
 <div class="row">
