@@ -1,7 +1,3 @@
-<?php
-    echo base_url()
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,7 +22,7 @@
   </head>
   <body>
     <div class="container">
-			
+
 		<div class="row">
 				<div class="search">
 					<div class="form-group">
@@ -34,7 +30,7 @@
                             <input class="form-control" type="search" id="search_box" name="job_name" placeholder="placeholder">
                             <span class="input-icon fui-search"></span>
                         </form>
-					</div>		
+					</div>
 				</div>
 		</div>
 		<div class="row">
@@ -42,7 +38,7 @@
 				<p></p>
 			</div>
 		</div>
-		
+
 		<div class="video-grid">
 			<div class="row">
 					<div class="col-md-4">v1</div>
@@ -50,7 +46,7 @@
 					<div class="col-md-4">v3</div>
 			</div>
 		</div>
-		
+
     </div>
     <!-- /.container -->
 
