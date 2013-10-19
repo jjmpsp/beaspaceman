@@ -12,5 +12,12 @@
             $query = $this->db->get('job', 10);
             return $query->result();
         }
+
+        function jobs_by_name($name)
+        {
+            $this->db->like('name', $name);
+            $query = $this->db->get('job');
+            return $query->result();
+        }
     }
 ?>

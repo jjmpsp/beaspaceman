@@ -5,7 +5,9 @@
 	{
 	    public function index_get()
 	    {
-	        echo "hi";
+	        if( !empty($this->input->get('job_name')) ){
+				$data['allJobs'] = $this->jobs->jobs_by_name($this->input->get('job_name'));
+	        }
 	    }
 
 	}

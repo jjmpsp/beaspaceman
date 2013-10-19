@@ -106,11 +106,11 @@
                     return;
                 };
                 i++;
-                console.log(srcText[i]);
                 result += srcText[i].replace("\n", "<br />");
                 $("#search_box").attr("placeholder", result);
             },
             30);
+
         })
     </script>
 
