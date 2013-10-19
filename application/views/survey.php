@@ -36,12 +36,16 @@
         color:white;
         padding-top:25px;
     }
+    .intro img {
+        padding-bottom:20px;
+    }
     </style>
   </head>
   <body>
     <div class="container">
         <div class="row">
             <div class="intro">
+                <img src="static/images/logo.png" width="200">
                 <iframe src="//player.vimeo.com/video/56690820" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 <form action="https://docs.google.com/forms/d/1mhXxFnx6QVomKS3vM1Ar5BFULelgk_1lACcHniNpCu4/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="form-group"><ol style="padding-left: 0">
                     <div class="ss-form-question errorbox-good">
