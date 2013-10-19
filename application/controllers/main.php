@@ -31,7 +31,8 @@ class Main extends CI_Controller {
 
 	public function job()
 	{
-		echo "hi";
+		$this->load->helper("url");
+		$this->load->view('job_search');
 	}
 }
 
