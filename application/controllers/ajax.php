@@ -3,10 +3,16 @@
 
 	class Ajax extends REST_Controller
 	{
-	    public function index_get()
+		public function index_get()
+	    {
+	    	echo "Sup?";
+	    }
+
+	    public function jobs_search_get()
 	    {
 	        if( !empty($this->input->get('job_name')) ){
-				$data['allJobs'] = $this->jobs->jobs_by_name($this->input->get('job_name'));
+	        	$this->load->model("jobs");
+				$this->response($this->jobs->jobs_by_name($this->input->get('job_name')));
 	        }
 	    }
 
