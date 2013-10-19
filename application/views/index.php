@@ -162,6 +162,7 @@
     <script src="<?php echo base_url() ?>static/js/jquery.tagsinput.js"></script>
     <script src="<?php echo base_url() ?>static/js/jquery.placeholder.js"></script>
     <script src="<?php echo base_url() ?>static/js/grid-caption.js"></script>
+    <script src="<?php echo base_url() ?>static/js/bootstrap-typeahead.js"></script>
 
     <!-- might wanna clean this up when we have an MVP -->
     <script>

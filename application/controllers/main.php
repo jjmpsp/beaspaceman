@@ -35,9 +35,9 @@ class Main extends CI_Controller {
 		$this->load->model("jobs");
 
 		$term = $this->input->get('job_name');
-		$data['allJobs'] = $this->jobs->get_last_ten_entries();
+		$data['allJobs'] = $this->jobs->jobs_by_name($term);
 
-		$this->load->view('job_search');		
+		$this->load->view('job_search', $data);		
 	}
 }
 
