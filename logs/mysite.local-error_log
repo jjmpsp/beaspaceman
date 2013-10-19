@@ -80,3 +80,8 @@
 [Sat Oct 19 12:55:08.537063 2013] [core:error] [pid 3100] (13)Permission denied: [client 127.0.0.1:55029] AH00035: access to /favicon.ico denied (filesystem path '/Users/Joel/Desktop/Sites') because search permissions are missing on a component of the path
 [Sat Oct 19 12:55:08.645134 2013] [core:error] [pid 3100] (13)Permission denied: [client 127.0.0.1:55029] AH00035: access to / denied (filesystem path '/Users/Joel/Desktop/Sites') because search permissions are missing on a component of the path
 [Sat Oct 19 12:55:08.661764 2013] [core:error] [pid 3100] (13)Permission denied: [client 127.0.0.1:55029] AH00035: access to /favicon.ico denied (filesystem path '/Users/Joel/Desktop/Sites') because search permissions are missing on a component of the path
+[Sat Oct 19 15:36:03.516480 2013] [access_compat:error] [pid 5872] [client 127.0.0.1:56998] AH01797: client denied by server configuration: /Users/Joel/Desktop/Sites/wannabeaspaceman/application
+[Sat Oct 19 15:36:07.819830 2013] [access_compat:error] [pid 5872] [client 127.0.0.1:56998] AH01797: client denied by server configuration: /Users/Joel/Desktop/Sites/wannabeaspaceman/application/static
+[Sat Oct 19 15:38:35.584090 2013] [access_compat:error] [pid 5860] [client 127.0.0.1:57014] AH01797: client denied by server configuration: /Users/Joel/Desktop/Sites/wannabeaspaceman/application/static
+[Sat Oct 19 15:38:44.408566 2013] [access_compat:error] [pid 5866] [client 127.0.0.1:57017] AH01797: client denied by server configuration: /Users/Joel/Desktop/Sites/wannabeaspaceman/application/static
+[Sat Oct 19 15:38:51.614786 2013] [access_compat:error] [pid 5871] [client 127.0.0.1:57018] AH01797: client denied by server configuration: /Users/Joel/Desktop/Sites/wannabeaspaceman/application/assets
