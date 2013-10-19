@@ -29,7 +29,7 @@ class Main extends CI_Controller {
 		$this->load->view('survey');
 	}
 
-	public function job()
+	public function job_search()
 	{
 		$this->load->helper("url");
 		$this->load->view('job_search');
