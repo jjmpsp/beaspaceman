@@ -1,6 +1,7 @@
 body{
 	background: url(../images/background.jpg) center 0 no-repeat;
     background-color:#0f2b2c;
+   	background-size:cover
 }
 
 .container{

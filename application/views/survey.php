@@ -46,7 +46,7 @@
                     <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1860807043"><div class="ss-q-title">Where do you go for your career advice?
                     </div>
                     <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-                    <input type="text" name="entry.1860807043" value="" class="ss-q-short" id="entry_1860807043" dir="auto" title="">
+                    <input type="text" name="entry.1860807043" value="" class="ss-q-short form-control" id="entry_1860807043" dir="auto" title="">
                     <div class="error-message"></div>
                     <div class="required-message">This is a required question</div>
 
@@ -65,21 +65,19 @@
                     <span class="ss-q-other-container goog-inline-block"><input type="text" name="entry.1674590170.other_option_response" value="" class="ss-q-other" id="entry_1674590170_other_option_response" dir="auto" aria-label="Other"></span>
                     </li></ul>
                     <div class="error-message"></div>
-                    <div class="required-message">This is a required question</div>
                     </div></div></div> <div class="ss-form-question errorbox-good">
                     <div dir="ltr" class="ss-item  ss-paragraph-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1551973167"><div class="ss-q-title">Why?
                     </div>
                     <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-                    <textarea name="entry.1551973167" rows="8" cols="0" class="ss-q-long" id="entry_1551973167" dir="auto"></textarea>
+                    <textarea name="entry.1551973167" rows="8" cols="0" class="ss-q-long form-control" id="entry_1551973167" dir="auto"></textarea>
                     <div class="error-message"></div>
-                    <div class="required-message">This is a required question</div>
 
                     </div></div></div> <div class="ss-form-question errorbox-good">
                     <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_744870596"><div class="ss-q-title">What do you wanna be?
                     <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
                     <span class="ss-required-asterisk">*</span></div>
                     <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-                    <input type="text" name="entry.744870596" value="" class="ss-q-short" id="entry_744870596" dir="auto" aria-required="true" required="" title="">
+                    <input type="text" name="entry.744870596" value="" class="ss-q-short form-control" id="entry_744870596" dir="auto" aria-required="true" required="" title="">
                     <div class="error-message"></div>
                     <div class="required-message">This is a required question</div>
 
@@ -90,7 +88,7 @@
 
 
                     <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-                    <input type="submit" name="submit" value="Submit" id="ss-submit">
+                    <input type="submit" name="submit" value="Submit" id="ss-submit" class="form-control">
                     <div class="ss-secondary-text">Never submit passwords through Google Forms.</div></td>
                     </tr></tbody></table></div></ol>
                 </form>
