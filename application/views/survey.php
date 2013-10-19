@@ -20,7 +20,8 @@
     <![endif]-->
     <style>
     .intro {
-        padding:20px;
+        padding-top:25px;
+
         width:500px;
         margin:0 auto;
     }
@@ -33,19 +34,20 @@
     }
     form {
         color:white;
+        padding-top:25px;
     }
     </style>
   </head>
   <body>
     <div class="container">
-
         <div class="row">
             <div class="intro">
+                <iframe src="//player.vimeo.com/video/56690820" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 <form action="https://docs.google.com/forms/d/1mhXxFnx6QVomKS3vM1Ar5BFULelgk_1lACcHniNpCu4/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="form-group"><ol style="padding-left: 0">
                     <div class="ss-form-question errorbox-good">
                     <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1059789002"><div class="ss-q-title">Email Address
                     </div>
-                    <div class="ss-q-help ss-secondary-text" dir="ltr">Leave your email address with us, if you want to be kept updated :)</div></label>
+                    <div class="ss-q-help ss-secondary-text" dir="ltr">Leave your email address with us, if you want to be kept updated.</div></label>
                     <input type="text" name="entry.1059789002" value="" class="ss-q-short valid form-control" id="entry_1059789002" dir="auto" pattern=".*^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$.*" title="Must match pattern">
                     </div></div></div> <div class="ss-form-question errorbox-good">
                     <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1860807043"><div class="ss-q-title">Where do you go for your career advice?
