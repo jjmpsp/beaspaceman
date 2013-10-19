@@ -1,0 +1,23 @@
+body{
+	background: url(../images/background.jpg) center 0 no-repeat;
+}
+
+.container{
+	max-width: 970px !important;
+}
+
+.search{
+	padding: 150px 0 0px;
+	width: 50%;
+	margin: auto;
+}
+
+.intro{
+	text-align: center;
+	font: 70px/80px;
+	padding: 200px 0 0;
+}
+
+.video-grid{
+	margin-left: ;
+}
