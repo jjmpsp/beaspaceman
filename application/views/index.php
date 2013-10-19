@@ -39,13 +39,43 @@
 			</div>
 		</div>
 
-		<div class="video-grid">
-			<div class="row">
-					<div class="col-md-4">v1</div>
-					<div class="col-md-4">v2</div>
-					<div class="col-md-4">v3</div>
-			</div>
-		</div>
+<div class="row">
+			<ul class="thumbnails" id="caption-hover" type="none">
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+						
+						<img src="static/images/video/poster.jpg" />
+						
+					</div>
+				</li>			
+				
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>						
+						<img src="static/images/video/poster.jpg" />						
+					</div>
+				</li>			
+				
+				<li class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+						
+						<img src="static/images/video/poster.jpg" />
+						
+					</div>
+				</li>						
+			</ul>
+		</div>	
 
     </div>
     <!-- /.container -->
@@ -62,6 +92,7 @@
     <script src="<?php echo base_url() ?>static/js/flatui-radio.js"></script>
     <script src="<?php echo base_url() ?>static/js/jquery.tagsinput.js"></script>
     <script src="<?php echo base_url() ?>static/js/jquery.placeholder.js"></script>
+    <script src="<?php echo base_url() ?>static/js/grid-caption.js"></script>
 
     <!-- might wanna clean this up when we have an MVP -->
     <script>
