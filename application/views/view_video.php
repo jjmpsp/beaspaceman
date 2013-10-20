@@ -37,6 +37,7 @@
 		<div class="row">
 			<div class="video-view">
 				<iframe src="http://player.vimeo.com/video/75809732" width="540" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                <br>
 				<input name="tagsinput" id="tagsinput" class="tagsinput" value="Clean,Fresh,Modern,Unique" />
             </div>
         </div>

@@ -1885,8 +1885,6 @@ fieldset[disabled] .form-control + .input-icon,
 .tagsinput .tag:hover {
   background-color: #16a085;
   color: #ffffff;
-  padding-left: 12px;
-  padding-right: 20px;
 }
 .tagsinput .tag:hover .tagsinput-remove-link {
   color: #ffffff;
