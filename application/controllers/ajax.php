@@ -10,7 +10,7 @@
 
 	    public function jobs_search_get()
 	    {
-	        if( !empty($this->input->get('job_name')) ){
+	        if( $this->input->get('job_name') !== "" ){
 	        	$this->load->model("jobs");
 				$this->response($this->jobs->jobs_by_name($this->input->get('job_name')));
 	        }
