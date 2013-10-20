@@ -20,13 +20,13 @@
     <![endif]-->
 
   </head>
-  <body>	
-  
+  <body>
+
 <div class="navbar view-video-nav">
 	  <div class="back">
 		<a href="<?php echo base_url(); ?>"><span class="fui-arrow-left"></span>Go Back</a>
 	  </div>
-	  
+
 	<div class="search-view-video col-md-3 pull-right">
 		<div class="form-group">
 			<form action="job_search" method="GET">
@@ -36,111 +36,117 @@
 		</div>
 	</div>
 </div>
-	  
+
     <div class="container">
-		
+
 			<div class="col-md-9" style="margin-bottom: 20px;">
 				<iframe src="http://player.vimeo.com/video/<?php echo $jobDetails["vimeo_url"]; ?>" width="100%" height="530" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				</br>
 				<div class="video-description">
-					<h6>I'm a <?php echo $jobDetails["name"]; ?></h6>					
-					<p>"<?php echo $jobDetails["description"]; ?>"</p>			
+					<h6>I'm a <?php echo $jobDetails["name"]; ?></h6>
+					<p>"<?php echo $jobDetails["description"]; ?>"</p>
 					<h6>Tags</h6>
 					<input name="tagsinput" id="tagsinput" class="tagsinput" value="<?php echo $jobDetails["tags"]; ?>" />
 				</div>
+                <div class="video-description">
+                            <h6>Sponsors</h6>
+                          <img src="<?php echo base_url(); ?>static/images/sponsor.jpg" height="200" width="300">
+                </div>
 			</div>
-			
+
 			<div class="related-videos col-md-3">
-				<ul id="caption-hover" type="none">				
+				<ul id="caption-hover" type="none">
 					<li>
 						<div class="thumbnail">
 							<div class="caption">
 							<h4>Caption</h4>
 							<p>sample text</p>
 							</div>
-							
+
 							<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
-							
+
 						</div>
 					</li>
-					
+
 					<li>
 						<div class="thumbnail">
 							<div class="caption">
 							<h4>Caption</h4>
 							<p>sample text</p>
 							</div>
-							
+
 							<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
-							
+
 						</div>
 					</li>
-					
+
 					<li>
 						<div class="thumbnail">
 							<div class="caption">
 							<h4>Caption</h4>
 							<p>sample text</p>
 							</div>
-							
+
 							<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
-							
+
 						</div>
 					</li>
-					
-				</ul>	
+
+				</ul>
 			</div>
-        
+
+
+
         <!--<div class="row video-details">
-					
-			<ul class="col-md-3" id="caption-hover" type="none">				
+
+			<ul class="col-md-3" id="caption-hover" type="none">
 				<li>
 					<div class="thumbnail">
 						<div class="caption">
 						<h4>Caption</h4>
 						<p>sample text</p>
 						</div>
-						
+
 						<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
-						
+
 					</div>
 				</li>
-				
+
 				<li>
 					<div class="thumbnail">
 						<div class="caption">
 						<h4>Caption</h4>
 						<p>sample text</p>
 						</div>
-						
+
 						<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
-						
+
 					</div>
 				</li>
-				
+
 				<li>
 					<div class="thumbnail">
 						<div class="caption">
 						<h4>Caption</h4>
 						<p>sample text</p>
 						</div>
-						
+
 						<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
-						
+
 					</div>
 				</li>
-				
-			</ul>			
-			
-			</div>			
+
+			</ul>
+
+			</div>
 		</div>        -->
-        
+
 	</div>
 
 
         <footer>
             <div class="container">
-                
+
                     <div class="pull-left">
                         &copy; Wanna be a spaceman 2013
                     </div>
