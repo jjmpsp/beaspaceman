@@ -13,9 +13,10 @@ body{
 }
 
 .search{
-	padding: 150px 0 0px;
+	padding: 40px 0 0px;
 	width: 55%;
 	margin: auto;
+	text-align: center;
 }
 
 .view-video-nav{
@@ -35,14 +36,17 @@ body{
 .back{
 	padding: 10px 10px 0;
 	position: relative;
-	color: white;
 	float: left;
+}
+
+.back a{
+	color: white;
 }
 
 .intro{
 	text-align: center;
 	font: 70px/80px;
-	padding: 160px 0 0;
+	padding: 70px 0 0;
 }
 
 .video-view{

@@ -24,7 +24,7 @@
   
 <div class="navbar view-video-nav">
 	  <div class="back">
-		<span class="fui-arrow-left"></span>Go Back
+		<a href="<?php echo base_url(); ?>"><span class="fui-arrow-left"></span>Go Back</a>
 	  </div>
 	  
 	<div class="search-view-video col-md-3 pull-right">
@@ -179,7 +179,7 @@
     <!-- might wanna clean this up when we have an MVP -->
     <script>
         $(document).ready(function(){
-            var srcText = "What do you want to be when you're older?";
+            var srcText = "Search for a career...";
             var i = 0;
             var result = srcText[i];
             setInterval(function() {

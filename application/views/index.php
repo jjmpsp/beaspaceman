@@ -23,7 +23,11 @@
   <body>
     <div class="container">
 		<div class="row">
+			
 			<div class="search">
+				
+				<img src="<?php echo base_url();?>static/images/logo.png" width="20%" height="20%" style="padding-bottom: 20px;">
+				
 				<div class="form-group">
                     <form action="job_search" method="GET">
                         <input class="form-control input-hg" type="search" id="search_box" name="job_name" placeholder="">
