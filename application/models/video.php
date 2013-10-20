@@ -25,6 +25,7 @@
 			   'date' 			=>	$vimeo_video_data[0]["upload_date"],
 			   'thumbnail'		=>	$vimeo_video_data[0]["thumbnail_large"],
 			   'duration'		=>	$vimeo_video_data[0]["duration"],
+			   'tags'			=>	$vimeo_video_data[0]["tags"]
 			);
 
 			$this->add_video($dbdata);
