@@ -34,7 +34,9 @@
 		</div>
 		<div class="row">
 			<div class="intro">
-				<p>Wanna Be A Spaceman is a tool for helping you...</p>
+				<p>A beautiful, curated video library showing a real perspective of different careers from people already doing the job.
+                <br>
+                Search. Watch. Be inspired.</p>
             </div>
         	</div>
                 <div class="row">
@@ -45,8 +47,8 @@
                                 <li class="col-md-4">
                                     <div class="thumbnail">
                                         <div class="caption">
-                                        <h4>Caption</h4>
-                                        <p>sample text</p>
+                                            <h4>I\'m a...</h4>
+                                            <p>Doctor</p>
                                         </div>
                                         
                                         <img src="'.$video->thumbnail.'" />
