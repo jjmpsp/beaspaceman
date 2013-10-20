@@ -45,6 +45,7 @@ $route['feedback'] = "main/feedback";
 $route['about'] = "main/about";
 $route['test'] = "main/test";
 $route['video'] = "main/video";
+$route['view_video'] = "main/view_video";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

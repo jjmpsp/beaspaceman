@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
-    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>static/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Loading Flat UI -->
-    <link href="static/css/flat-ui.css" rel="stylesheet">
-    <link href="static/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>static/css/flat-ui.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>static/css/style.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -88,15 +88,15 @@
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/bootstrap-select.js"></script>
-    <script src="static/js/bootstrap-switch.js"></script>
-    <script src="static/js/flatui-checkbox.js"></script>
-    <script src="static/js/flatui-radio.js"></script>
-    <script src="static/js/jquery.tagsinput.js"></script>
-    <script src="static/js/jquery.placeholder.js"></script>
-    <script src="static/js/grid-caption.js"></script>
-    <script src="static/js/bootstrap-typeahead.js"></script>
+    <script src="<?php echo base_url(); ?>static/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>static/js/bootstrap-select.js"></script>
+    <script src="<?php echo base_url(); ?>static/js/bootstrap-switch.js"></script>
+    <script src="<?php echo base_url(); ?>static/js/flatui-checkbox.js"></script>
+    <script src="<?php echo base_url(); ?>static/js/flatui-radio.js"></script>
+    <script src="<?php echo base_url(); ?>static/js/jquery.tagsinput.js"></script>
+    <script src="<?php echo base_url(); ?>static/js/jquery.placeholder.js"></script>
+    <script src="<?php echo base_url(); ?>static/js/grid-caption.js"></script>
+    <script src="<?php echo base_url(); ?>static/js/bootstrap-typeahead.js"></script>
 
     <!-- might wanna clean this up when we have an MVP -->
     <script>
