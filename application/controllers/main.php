@@ -51,6 +51,7 @@ class Main extends CI_Controller {
 	}
 	
 	public function view_video(){
+		$this->load->helper('url');
 		$this->load->view('view_video');
 	}
 
