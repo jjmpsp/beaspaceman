@@ -28,6 +28,7 @@
                     <form action="job_search" method="GET">
                         <input class="form-control input-hg" type="search" id="search_box" name="job_name" placeholder="">
                         <span class="input-icon fui-search"></span>
+                        <a id="inspiration_button" style="margin-top:20px;" class="btn btn-block btn-lg btn-inverse">Give me some inspiration</a>
                     </form>
 				</div>
 			</div>
@@ -133,7 +134,8 @@
                             response( $.map( data, function( item ) {
                                 return {
                                     //label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
-                                    value: item.name
+                                    value: item.name,
+                                    id: item.id
                                 }
                              }));
                         }
@@ -141,9 +143,8 @@
                 },
                 minLength: 2,
                 select: function( event, ui ) {
-                    log( ui.item ?
-                    "Selected: " + ui.item.label :
-                    "Nothing selected, input was " + this.value);
+                    console.log( ui.item.id );
+                    window.location.href = "<?php echo base_url(); ?>view_video/?job_id=" +ui.item.id;
                 },
                 open: function() {
                     $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
@@ -152,6 +153,22 @@
                     $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
                 }
             });
+
+            $("#inspiration_button").click(function(){
+                
+                $.ajax({
+                    url: "<?php echo base_url(); ?>ajax/random_job",
+                    data: {
+                        format  : "json"
+                    },
+                    context: document.body,
+                    success: function(data){
+                        window.location.href = "<?php echo base_url(); ?>view_video/?job_id=" +data.job_id;    
+                    }
+                });
+
+                return false;
+            })
         });
     </script>
 

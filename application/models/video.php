@@ -31,6 +31,10 @@
 
 		}
 
+		function single_video_details($job_id){
+			$this->db->where('featured', '1');
+		}
+
 		function add_video($dbdata){
 			$this->db->insert('video', $dbdata); 
 		}
