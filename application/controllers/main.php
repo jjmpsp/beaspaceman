@@ -37,10 +37,10 @@ class Main extends CI_Controller {
 		$this->load->helper("url");
 		$this->load->view('about');
 	}
-	
+
 	public function team(){
 		$this->load->helper("url");
-		$this->load-view('team');
+		$this->load->view('team');
 	}
 
 
