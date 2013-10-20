@@ -47,9 +47,9 @@ class Main extends CI_Controller {
 		$term = $this->input->get('url');
 		$data['videoInfo'] = $this->video->get_video_details($term);
 
-		//$this->load->view('job_search', $data);		
+		//$this->load->view('job_search', $data);
 	}
-	
+
 	public function view_video(){
 		$this->load->helper('url');
 		$this->load->view('view_video');
@@ -79,7 +79,7 @@ class Main extends CI_Controller {
 		$term = $this->input->get('job_name');
 		$data['allJobs'] = $this->jobs->jobs_by_name($term);
 
-		$this->load->view('job_search', $data);		
+		$this->load->view('job_search', $data);
 	}
 
 	public function inspiration()
@@ -90,7 +90,7 @@ class Main extends CI_Controller {
 		$term = $this->input->get('job_name');
 		$data['allJobs'] = $this->jobs->jobs_by_name($term);
 
-		$this->load->view('inspiration', $data);		
+		$this->load->view('inspiration', $data);
 	}
 
 }
