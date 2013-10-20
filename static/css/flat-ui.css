@@ -1856,12 +1856,12 @@ fieldset[disabled] .form-control + .input-icon,
   margin-top: 10px;
 }
 .tagsinput {
-  background: white;
-  border: 2px solid #1abc9c;
+  background: rgb(240, 244, 244);
+  /*border: 2px solid #1abc9c;*/
   border-radius: 6px;
   height: 100px;
   margin-bottom: 18px;
-  padding: 6px 1px 1px 6px;
+  padding: 0px 0px 0px 0px;
   overflow-y: auto;
   text-align: left;
 }

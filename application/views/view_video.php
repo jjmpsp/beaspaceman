@@ -20,34 +20,80 @@
     <![endif]-->
 
   </head>
-  <body>
-	
-	<div class="navbar">
-		<div class="search-view-video col-md-4 pull-right">
-			<div class="form-group">
-				<form action="job_search" method="GET">
-					<input class="form-control" type="search" id="search_box" name="job_name" placeholder="">
-					<span class="input-icon fui-search"></span>
-				</form>
-			</div>
+  <body>	
+  
+<div class="navbar view-video-nav">
+	  <div class="back">
+		<span class="fui-arrow-left"></span>Go Back
+	  </div>
+	  
+	<div class="search-view-video col-md-3 pull-right">
+		<div class="form-group">
+			<form action="job_search" method="GET">
+				<input class="form-control input-sm" type="search" id="search_box" name="job_name" placeholder="">
+				<span class="input-icon fui-search"></span>
+			</form>
 		</div>
-	</div>		
+	</div>
+</div>
 	  
     <div class="container">
-		<div class="row">
-			<div class="video-view">
-				<iframe src="http://player.vimeo.com/video/75809732" width="540" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                <br>
-				<input name="tagsinput" id="tagsinput" class="tagsinput" value="Clean,Fresh,Modern,Unique" />
-            </div>
-        </div>
-        
-        <div class="row video-details">
-			<div class="col-md-9">
-			<p>aa</p>
+		
+			<div class="col-md-9" style="margin-bottom: 20px;">
+				<iframe src="http://player.vimeo.com/video/75809732" width="100%" height="530" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</br>
+				<div class="video-description">
+					<h6>Job Title</h6>					
+					<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>			
+					<h6>Tags</h6>
+					<input name="tagsinput" id="tagsinput" class="tagsinput" value="Nurse, Doctor, Medical, Chemistry, Biology" />
+				</div>
 			</div>
+			
+			<div class="related-videos col-md-3">
+				<ul id="caption-hover" type="none">				
+					<li>
+						<div class="thumbnail">
+							<div class="caption">
+							<h4>Caption</h4>
+							<p>sample text</p>
+							</div>
+							
+							<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
+							
+						</div>
+					</li>
 					
-			<ul class="thumbnails col-md-3" id="caption-hover" type="none">
+					<li>
+						<div class="thumbnail">
+							<div class="caption">
+							<h4>Caption</h4>
+							<p>sample text</p>
+							</div>
+							
+							<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
+							
+						</div>
+					</li>
+					
+					<li>
+						<div class="thumbnail">
+							<div class="caption">
+							<h4>Caption</h4>
+							<p>sample text</p>
+							</div>
+							
+							<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
+							
+						</div>
+					</li>
+					
+				</ul>	
+			</div>
+        
+        <!--<div class="row video-details">
+					
+			<ul class="col-md-3" id="caption-hover" type="none">				
 				<li>
 					<div class="thumbnail">
 						<div class="caption">
@@ -87,7 +133,7 @@
 			</ul>			
 			
 			</div>			
-		</div>        
+		</div>        -->
         
 	</div>
 
