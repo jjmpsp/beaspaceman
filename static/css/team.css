@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+.main-container{padding:0 0px 0 20px}
+.content{padding:0px 0 40px 0}
+.content h2{text-align:center;font-size:49px;font-weight:400;margin-bottom:20px}
+.content h2+p{text-align:justify;font-size:15px;line-height:28px;font-weight:300}
+.content a{color:#bc0c0c}
+.title{text-align:center}
+.content-1 h2{color:#333}
+.content-1 p{color:#333}
+.content-2 h2{color:#fff;margin-bottom:-10px}
+.content-2 p{color:#fff}
+.content-2 .member{margin-top:60px;text-align:center}
+.content-2 .member img{margin-bottom:0px}
+.content-2 .member h3{margin:10px;color:#fff;font-weight:400;font-size:26px}
+.content-2 .member h3+p{margin-top:0;font-weight:300;font-size:20px}
+.content-2 .member a{background:#464646;color:#fff;font-weight:300;font-size:14px;padding:5px 10px 5px 10px}
+.modal .social{display:inline;position:absolute;right:70px;top:10px}
+.modal .social ul{margin:0;padding:0}
+.modal .social ul li{list-style:none;display:inline;margin-right:10px}
+.modal .social ul li img{width:32px}
+img.profile{float:left;padding-right:15px}
+img.profile+p{float:right;width:60%}
+.modal-body{overflow-y:auto}
+.modal-body p{font-size:14px}
+.member p{margin-bottom: 5px;}
+.event h2{font-size:49px;font-weight:400}
+@media (max-width: 768px){.event h2{font-size:29px}}
+.event p{font-size:22px;font-weight:300;text-align:justify}
+@media (max-width: 768px){.event p{font-size:16px}}
+.event .row{margin:0;padding:0;padding:40px 0 40px 0}
+.event .featurette{margin:0;padding:0}
+.event .featurette-divider{margin:0;padding:0;display:none}
+.event h2.featurette-heading{padding:20px 0 15px 0}
+.event img{padding:20px 0 20px 0}.event a{color:#bc0c0c}
+.event-1{background:#fff}.event-2{background:#bdc3c7}
+.event-3{background:#fff}.event-4{background:#464646}
+.event-4 p{color:white}
+.event-4 h2{color:white}
+.supporters{padding:40px 0 40px 0}
+.supporters .supporter img{padding:10px 0 20px 0;max-width:545px;width:100%}
+.supporters .supporter p{text-align:justify;font-weight:400}
+.blurb{background:#e74c3c;color:#fff;padding:40px 0 40px 0}
+.blurb h2{font-weight:300;margin:0;padding:10px 0 10px 0;font-size:4rem}
+.blurb p{font-weight:400}.blurb a{color:#464646}
+.football-team{padding:40px 0 40px 0}
+.football-team img{max-width:1170px;width:100%;margin-bottom:30px}
+.football-team h2{font-weight:400;font-size:49px;text-align:center;margin:0;padding:10px 0 15px 0}
+.football-team p{text-align:justify}.footer{background:#bdc3c7;padding:15px 0 15px 0}
+.footer h3{color:#333;font-weight:300}
+.footer .copyright{display:block}
+.footer .copyright p{color:#333;font-weight:300;font-size:14px}
+.footer a{color:#bc0c0c}.footer .social{margin-bottom:25px}
+.footer .social ul{margin:0;padding:0;margin-top:25px}
+.footer .social ul li{list-style:none;display:inline;margin-right:20px}
+.footer .social ul li img{width:32px;margin-right:5px}
+.wufoo-z1x6ukuw0v0ij2x h2{display:none}
+.wufoo-z1x6ukuw0v0ij2x hr{display:none}
+a{color:#bc0c0c}
+a:hover{color:#bc0c0c}
+html,body{font-family:'Open Sans', 'Helvetica', Arial, sans-serif}
