@@ -80,12 +80,12 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $db['default']['autoinit'] = TRUE;
     $db['default']['stricton'] = FALSE;
 }else {
-    $heroku_postgre_url = parse_url($_SERVER['DATABASE_URL']);
+    $heroku_postgre_url = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
     $db['default']['hostname'] = $heroku_postgre_url['host'];
     $db['default']['username'] = $heroku_postgre_url['user'];
     $db['default']['password'] = $heroku_postgre_url['pass'];
     $db['default']['database'] = trim($heroku_postgre_url['path'], '/');
-    $db['default']['dbdriver'] = 'postgre';
+    $db['default']['dbdriver'] = 'mysql';
     $db['default']['dbprefix'] = '';
     $db['default']['pconnect'] = TRUE;
     $db['default']['db_debug'] = TRUE;

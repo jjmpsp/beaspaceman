@@ -1,0 +1,1 @@
+$ /Applications/Postgres.app/Contents/MacOS/bin/pg_dump --host localhost --port 5432 --username "tharshan" --no-password  --format plain --no-owner --create --clean --no-privileges --verbose --file "/Users/tharshan/WebRoot/beaspaceman/wannabeaspaceman.psql" "wannabeaspaceman"

@@ -3,78 +3,78 @@
 -- --------------------------------------------------------
 
 --
--- Table structure for table "industry"
+-- Table structure for table `industry`
 --
 
-DROP TABLE IF EXISTS "industry";
-CREATE TABLE IF NOT EXISTS "industry" (
-  "id" int(11) NOT NULL AUTO_INCREMENT,
-  "name" varchar(255) NOT NULL,
-  PRIMARY KEY ("id")
+DROP TABLE IF EXISTS `industry`;
+CREATE TABLE IF NOT EXISTS `industry` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table "job"
+-- Table structure for table `job`
 --
 
-DROP TABLE IF EXISTS "job";
-CREATE TABLE IF NOT EXISTS "job" (
-  "id" int(11) NOT NULL AUTO_INCREMENT,
-  "name" varchar(255) NOT NULL,
-  PRIMARY KEY ("id")
+DROP TABLE IF EXISTS `job`;
+CREATE TABLE IF NOT EXISTS `job` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table "skill"
+-- Table structure for table `skill`
 --
 
-DROP TABLE IF EXISTS "skill";
-CREATE TABLE IF NOT EXISTS "skill" (
-  "id" int(11) NOT NULL AUTO_INCREMENT,
-  "name" varchar(255) NOT NULL,
-  PRIMARY KEY ("id")
+DROP TABLE IF EXISTS `skill`;
+CREATE TABLE IF NOT EXISTS `skill` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table "tag"
+-- Table structure for table `tag`
 --
 
-DROP TABLE IF EXISTS "tag";
-CREATE TABLE IF NOT EXISTS "tag" (
-  "id" int(11) NOT NULL AUTO_INCREMENT,
-  "name" varchar(255) NOT NULL,
-  PRIMARY KEY ("id")
+DROP TABLE IF EXISTS `tag`;
+CREATE TABLE IF NOT EXISTS `tag` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table "video"
+-- Table structure for table `video`
 --
 
-DROP TABLE IF EXISTS "video";
-CREATE TABLE IF NOT EXISTS "video" (
-  "id" int(11) NOT NULL AUTO_INCREMENT,
-  "description" longtext NOT NULL,
-  "date" varchar(255) NOT NULL,
-  "vimeo_url" varchar(255) NOT NULL,
-  "featured" tinyint(1) NOT NULL,
-  "thumbnail" varchar(256) NOT NULL,
-  "duration" int(11) NOT NULL,
-  PRIMARY KEY ("id")
+DROP TABLE IF EXISTS `video`;
+CREATE TABLE IF NOT EXISTS `video` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `description` longtext NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `vimeo_url` varchar(255) NOT NULL,
+  `featured` tinyint(1) NOT NULL,
+  `thumbnail` varchar(256) NOT NULL,
+  `duration` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
--- Dumping data for table "video"
+-- Dumping data for table `video`
 --
 
-INSERT INTO "video" ("id", "description", "date", "vimeo_url", "featured", "thumbnail", "duration") VALUES
+INSERT INTO `video` (`id`, `description`, `date`, `vimeo_url`, `featured`, `thumbnail`, `duration`) VALUES
 (1, 'Follow us on Twitter: twitter.com/dustin_farrell<br />\r\nhttp://twitter.com/crewwest<br />\r\nwebsite: www.crewwestinc.com/<br />\r\n<br />\r\nPlanet 5D Blog: http://blog.planet5d.com/2011/10/dustin-farrells-landscapes-volume-two-another-canon-eos-5d-mark-ii-timelapse-masterpiece/<br />\r\n<br />\r\nPLEASE WATCH IN HD FULL SCREEN w/SOUND.  It is a much better viewing experience.  Hopefully you have a 1080P monitor and good connection.  If not, bug a friend or colleague that does.  It is worth it. <br />\r\n<br />\r\nLandscapes: Volume 2 is the second of a three part series.  Every frame of this video is a raw still from a Canon 5D2 DSLR and processed with Adobe software.  In Volume 2 I again show off my beautiful home state of Arizona and I also made several trips to Utah.  This video has some iconic landmarks that we have seen before.  I felt that showing them again with motion controlled HDR and/or night timelapse would be a new way to see old landmarks.<br />\r\n<br />\r\nSales Pitch:  I would now have to say that my timelapse skill set is very complete.  The amount of knowledge I have gained through research, testing, and shooting experience is astounding.  From moon phases to high dynamic range to motion control rigs to noise reduction, you would have a tough time finding someone with more overall knowledge of timelapse.  If you need help with your next timelapse project you can reach me at 888-444-2739 or DustinF@crewwestinc.com<br />\r\n<br />\r\nMost of the motion control for this video was done with the Stage Zero Dolly by Dynamic Perception.  Once I got comfortable using the DP dolly I fell in love.  I can set up shots now in much shorter times.  More importantly for me, it is much smaller and much more portable than my homemade motion control.  Without it, shots like the Delicate Arch shot in Utah would be nearly impossible due to the length of the hike.  Buy the Stage Zero Dolly if you are looking for quality, inexpensive, easy-to-use motion control.  http://dynamicperception.com/<br />\r\n<br />\r\nIn addition to the Stage Zero, I also used a three axis motion controlled CamTram. The CamTram is the most versatile dolly I have ever used.  Its applications are only limited by your creativity.  The CamTram has virtually no weight limit.  I was able to achieve shots that dolly-in with the camera just over the ground because of the CamTram''s ability to hold heavy counter weights.<br />\r\nCamTram Motorized Options Video: http://www.vimeo.com/30385088<br />\r\n<br />\r\nThe amazing graphic work at the beginning and end was done by Chris Pettit of Digital Skye Media Development. Check out Chris'' other work here: vimeo.com/user8750744<br />\r\n<br />\r\nMusic is "Sunshine (Adagio In D Minor)" by John Murphy.  #15 here:  http://itunes.apple.com/us/album/sunshine-music-from-motion/id297702863<br />\r\n<br />\r\nThank you to the Lowell Observatory in Flagstaff for allowing me to shoot there.  They were very friendly and helpful.  http://www.lowell.edu/<br />\r\n<br />\r\nSaving the best for last . . . thanks to my wonderful wife Laura.  Not only does she put up with and support this crazy passion of mine, she helped out on many of these shots.  I think I''ll keep her :-)<br />\r\n<br />\r\nENJOY', '2011-10-03 06:07:18', '29950141', 1, 'http://b.vimeocdn.com/ts/200/885/200885447_640.jpg', 210),
 (2, 'Follow us on Twitter: twitter.com/dustin_farrell<br />\r\nhttp://twitter.com/crewwest<br />\r\nwebsite: www.crewwestinc.com/<br />\r\n<br />\r\nPlanet 5D Blog: http://blog.planet5d.com/2011/10/dustin-farrells-landscapes-volume-two-another-canon-eos-5d-mark-ii-timelapse-masterpiece/<br />\r\n<br />\r\nPLEASE WATCH IN HD FULL SCREEN w/SOUND.  It is a much better viewing experience.  Hopefully you have a 1080P monitor and good connection.  If not, bug a friend or colleague that does.  It is worth it. <br />\r\n<br />\r\nLandscapes: Volume 2 is the second of a three part series.  Every frame of this video is a raw still from a Canon 5D2 DSLR and processed with Adobe software.  In Volume 2 I again show off my beautiful home state of Arizona and I also made several trips to Utah.  This video has some iconic landmarks that we have seen before.  I felt that showing them again with motion controlled HDR and/or night timelapse would be a new way to see old landmarks.<br />\r\n<br />\r\nSales Pitch:  I would now have to say that my timelapse skill set is very complete.  The amount of knowledge I have gained through research, testing, and shooting experience is astounding.  From moon phases to high dynamic range to motion control rigs to noise reduction, you would have a tough time finding someone with more overall knowledge of timelapse.  If you need help with your next timelapse project you can reach me at 888-444-2739 or DustinF@crewwestinc.com<br />\r\n<br />\r\nMost of the motion control for this video was done with the Stage Zero Dolly by Dynamic Perception.  Once I got comfortable using the DP dolly I fell in love.  I can set up shots now in much shorter times.  More importantly for me, it is much smaller and much more portable than my homemade motion control.  Without it, shots like the Delicate Arch shot in Utah would be nearly impossible due to the length of the hike.  Buy the Stage Zero Dolly if you are looking for quality, inexpensive, easy-to-use motion control.  http://dynamicperception.com/<br />\r\n<br />\r\nIn addition to the Stage Zero, I also used a three axis motion controlled CamTram. The CamTram is the most versatile dolly I have ever used.  Its applications are only limited by your creativity.  The CamTram has virtually no weight limit.  I was able to achieve shots that dolly-in with the camera just over the ground because of the CamTram''s ability to hold heavy counter weights.<br />\r\nCamTram Motorized Options Video: http://www.vimeo.com/30385088<br />\r\n<br />\r\nThe amazing graphic work at the beginning and end was done by Chris Pettit of Digital Skye Media Development. Check out Chris'' other work here: vimeo.com/user8750744<br />\r\n<br />\r\nMusic is "Sunshine (Adagio In D Minor)" by John Murphy.  #15 here:  http://itunes.apple.com/us/album/sunshine-music-from-motion/id297702863<br />\r\n<br />\r\nThank you to the Lowell Observatory in Flagstaff for allowing me to shoot there.  They were very friendly and helpful.  http://www.lowell.edu/<br />\r\n<br />\r\nSaving the best for last . . . thanks to my wonderful wife Laura.  Not only does she put up with and support this crazy passion of mine, she helped out on many of these shots.  I think I''ll keep her :-)<br />\r\n<br />\r\nENJOY', '2011-10-03 06:07:18', '29950141', 1, 'http://b.vimeocdn.com/ts/200/885/200885447_640.jpg', 210),
 (3, 'Follow us on Twitter: twitter.com/dustin_farrell<br />\r\nhttp://twitter.com/crewwest<br />\r\nwebsite: www.crewwestinc.com/<br />\r\n<br />\r\nPlanet 5D Blog: http://blog.planet5d.com/2011/10/dustin-farrells-landscapes-volume-two-another-canon-eos-5d-mark-ii-timelapse-masterpiece/<br />\r\n<br />\r\nPLEASE WATCH IN HD FULL SCREEN w/SOUND.  It is a much better viewing experience.  Hopefully you have a 1080P monitor and good connection.  If not, bug a friend or colleague that does.  It is worth it. <br />\r\n<br />\r\nLandscapes: Volume 2 is the second of a three part series.  Every frame of this video is a raw still from a Canon 5D2 DSLR and processed with Adobe software.  In Volume 2 I again show off my beautiful home state of Arizona and I also made several trips to Utah.  This video has some iconic landmarks that we have seen before.  I felt that showing them again with motion controlled HDR and/or night timelapse would be a new way to see old landmarks.<br />\r\n<br />\r\nSales Pitch:  I would now have to say that my timelapse skill set is very complete.  The amount of knowledge I have gained through research, testing, and shooting experience is astounding.  From moon phases to high dynamic range to motion control rigs to noise reduction, you would have a tough time finding someone with more overall knowledge of timelapse.  If you need help with your next timelapse project you can reach me at 888-444-2739 or DustinF@crewwestinc.com<br />\r\n<br />\r\nMost of the motion control for this video was done with the Stage Zero Dolly by Dynamic Perception.  Once I got comfortable using the DP dolly I fell in love.  I can set up shots now in much shorter times.  More importantly for me, it is much smaller and much more portable than my homemade motion control.  Without it, shots like the Delicate Arch shot in Utah would be nearly impossible due to the length of the hike.  Buy the Stage Zero Dolly if you are looking for quality, inexpensive, easy-to-use motion control.  http://dynamicperception.com/<br />\r\n<br />\r\nIn addition to the Stage Zero, I also used a three axis motion controlled CamTram. The CamTram is the most versatile dolly I have ever used.  Its applications are only limited by your creativity.  The CamTram has virtually no weight limit.  I was able to achieve shots that dolly-in with the camera just over the ground because of the CamTram''s ability to hold heavy counter weights.<br />\r\nCamTram Motorized Options Video: http://www.vimeo.com/30385088<br />\r\n<br />\r\nThe amazing graphic work at the beginning and end was done by Chris Pettit of Digital Skye Media Development. Check out Chris'' other work here: vimeo.com/user8750744<br />\r\n<br />\r\nMusic is "Sunshine (Adagio In D Minor)" by John Murphy.  #15 here:  http://itunes.apple.com/us/album/sunshine-music-from-motion/id297702863<br />\r\n<br />\r\nThank you to the Lowell Observatory in Flagstaff for allowing me to shoot there.  They were very friendly and helpful.  http://www.lowell.edu/<br />\r\n<br />\r\nSaving the best for last . . . thanks to my wonderful wife Laura.  Not only does she put up with and support this crazy passion of mine, she helped out on many of these shots.  I think I''ll keep her :-)<br />\r\n<br />\r\nENJOY', '2011-10-03 06:07:18', '29950141', 1, 'http://b.vimeocdn.com/ts/200/885/200885447_640.jpg', 210),
