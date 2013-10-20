@@ -21,44 +21,74 @@
 
   </head>
   <body>
-    <div class="container">
-		<div class="row">
-			<div class="search">
-				<div class="form-group">
-                    <form action="job_search" method="GET">
-                        <input class="form-control input-hg" type="search" id="search_box" name="job_name" placeholder="">
-                        <span class="input-icon fui-search"></span>
-                    </form>
-				</div>
+	
+	<div class="navbar">
+		<div class="search-view-video col-md-4 pull-right">
+			<div class="form-group">
+				<form action="job_search" method="GET">
+					<input class="form-control" type="search" id="search_box" name="job_name" placeholder="">
+					<span class="input-icon fui-search"></span>
+				</form>
 			</div>
 		</div>
+	</div>		
+	  
+    <div class="container">
 		<div class="row">
-			<div class="intro">
-				<p>Wanna Be A Spaceman is a tool for helping you...</p>
+			<div class="video-view">
+				<iframe src="http://player.vimeo.com/video/75809732" width="540" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				<input name="tagsinput" id="tagsinput" class="tagsinput" value="Clean,Fresh,Modern,Unique" />
             </div>
-        	</div>
-                <div class="row">
-        			<ul class="thumbnails" id="caption-hover" type="none">
-                        <?php
-                            foreach($featuredVideos as $video){
-                                echo '           
-                                <li class="col-md-4">
-                                    <div class="thumbnail">
-                                        <div class="caption">
-                                        <h4>Caption</h4>
-                                        <p>sample text</p>
-                                        </div>
-                                        
-                                        <img src="'.$video->thumbnail.'" />
-                                        
-                                    </div>
-                                </li>';
-                            }
-                        ?>
-        			</ul>
-                </div>
-        	</div>
         </div>
+        
+        <div class="row video-details">
+			<div class="col-md-9">
+			<p>aa</p>
+			</div>
+					
+			<ul class="thumbnails col-md-3" id="caption-hover" type="none">
+				<li>
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+						
+						<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
+						
+					</div>
+				</li>
+				
+				<li>
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+						
+						<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
+						
+					</div>
+				</li>
+				
+				<li>
+					<div class="thumbnail">
+						<div class="caption">
+						<h4>Caption</h4>
+						<p>sample text</p>
+						</div>
+						
+						<img src="<?php echo base_url();?>static/images/video/poster.jpg" />
+						
+					</div>
+				</li>
+				
+			</ul>			
+			
+			</div>			
+		</div>        
+        
+	</div>
 
 
         <footer>
@@ -97,6 +127,7 @@
     <script src="<?php echo base_url(); ?>static/js/jquery.placeholder.js"></script>
     <script src="<?php echo base_url(); ?>static/js/grid-caption.js"></script>
     <script src="<?php echo base_url(); ?>static/js/bootstrap-typeahead.js"></script>
+    <script src="<?php echo base_url(); ?>static/js/tags.js"></script>
 
     <!-- might wanna clean this up when we have an MVP -->
     <script>

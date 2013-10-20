@@ -135,31 +135,31 @@
 			return false;
 		};
 		
-	$.fn.removeTag = function(value) { 
-			value = unescape(value);
-			this.each(function() { 
-				var id = $(this).attr('id');
+	//$.fn.removeTag = function(value) { 
+			//value = unescape(value);
+			//this.each(function() { 
+				//var id = $(this).attr('id');
 	
-				var old = $(this).val().split(delimiter[id]);
+				//var old = $(this).val().split(delimiter[id]);
 					
-				$('#'+id+'_tagsinput .tag').remove();
-				str = '';
-				for (i=0; i< old.length; i++) { 
-					if (old[i]!=value) { 
-						str = str + delimiter[id] +old[i];
-					}
-				}
+				//$('#'+id+'_tagsinput .tag').remove();
+				//str = '';
+				//for (i=0; i< old.length; i++) { 
+					//if (old[i]!=value) { 
+						//str = str + delimiter[id] +old[i];
+					//}
+				//}
 				
-				$.fn.tagsInput.importTags(this,str);
+				//$.fn.tagsInput.importTags(this,str);
 
-				if (tags_callbacks[id] && tags_callbacks[id]['onRemoveTag']) {
-					var f = tags_callbacks[id]['onRemoveTag'];
-					f.call(this, value);
-				}
-			});
+				//if (tags_callbacks[id] && tags_callbacks[id]['onRemoveTag']) {
+					//var f = tags_callbacks[id]['onRemoveTag'];
+					//f.call(this, value);
+				//}
+			//});
 					
-			return false;
-		};
+			//return false;
+		//};
 	
 	$.fn.tagExist = function(val) {
 		var id = $(this).attr('id');

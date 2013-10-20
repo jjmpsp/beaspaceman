@@ -49,6 +49,11 @@ class Main extends CI_Controller {
 
 		//$this->load->view('job_search', $data);		
 	}
+	
+	public function view_video(){
+		$this->load->helper('url');
+		$this->load->view('view_video');
+	}
 
 	public function test(){
 
