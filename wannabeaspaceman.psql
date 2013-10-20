@@ -1,0 +1,339 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.2.2
+-- Dumped by pg_dump version 9.2.2
+-- Started on 2013-10-20 12:13:42 BST
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- TOC entry 178 (class 3079 OID 11995)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 2238 (class 0 OID 0)
+-- Dependencies: 178
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+--
+-- TOC entry 168 (class 1259 OID 221431)
+-- Name: industry_id_seq; Type: SEQUENCE; Schema: public; Owner: tharshan
+--
+
+CREATE SEQUENCE industry_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.industry_id_seq OWNER TO tharshan;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 169 (class 1259 OID 221433)
+-- Name: industry; Type: TABLE; Schema: public; Owner: tharshan; Tablespace: 
+--
+
+CREATE TABLE industry (
+    id integer DEFAULT nextval('industry_id_seq'::regclass) NOT NULL,
+    name character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.industry OWNER TO tharshan;
+
+--
+-- TOC entry 170 (class 1259 OID 221437)
+-- Name: job_id_seq; Type: SEQUENCE; Schema: public; Owner: tharshan
+--
+
+CREATE SEQUENCE job_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.job_id_seq OWNER TO tharshan;
+
+--
+-- TOC entry 171 (class 1259 OID 221439)
+-- Name: job; Type: TABLE; Schema: public; Owner: tharshan; Tablespace: 
+--
+
+CREATE TABLE job (
+    id integer DEFAULT nextval('job_id_seq'::regclass) NOT NULL,
+    name character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.job OWNER TO tharshan;
+
+--
+-- TOC entry 172 (class 1259 OID 221443)
+-- Name: skill_id_seq; Type: SEQUENCE; Schema: public; Owner: tharshan
+--
+
+CREATE SEQUENCE skill_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.skill_id_seq OWNER TO tharshan;
+
+--
+-- TOC entry 173 (class 1259 OID 221445)
+-- Name: skill; Type: TABLE; Schema: public; Owner: tharshan; Tablespace: 
+--
+
+CREATE TABLE skill (
+    id integer DEFAULT nextval('skill_id_seq'::regclass) NOT NULL,
+    name character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.skill OWNER TO tharshan;
+
+--
+-- TOC entry 174 (class 1259 OID 221449)
+-- Name: tag_id_seq; Type: SEQUENCE; Schema: public; Owner: tharshan
+--
+
+CREATE SEQUENCE tag_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.tag_id_seq OWNER TO tharshan;
+
+--
+-- TOC entry 175 (class 1259 OID 221451)
+-- Name: tag; Type: TABLE; Schema: public; Owner: tharshan; Tablespace: 
+--
+
+CREATE TABLE tag (
+    id integer DEFAULT nextval('tag_id_seq'::regclass) NOT NULL,
+    name character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.tag OWNER TO tharshan;
+
+--
+-- TOC entry 176 (class 1259 OID 221455)
+-- Name: video_id_seq; Type: SEQUENCE; Schema: public; Owner: tharshan
+--
+
+CREATE SEQUENCE video_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.video_id_seq OWNER TO tharshan;
+
+--
+-- TOC entry 177 (class 1259 OID 221457)
+-- Name: video; Type: TABLE; Schema: public; Owner: tharshan; Tablespace: 
+--
+
+CREATE TABLE video (
+    id integer DEFAULT nextval('video_id_seq'::regclass) NOT NULL,
+    vimeo_url character varying(255) NOT NULL,
+    featured boolean NOT NULL
+);
+
+
+ALTER TABLE public.video OWNER TO tharshan;
+
+--
+-- TOC entry 2222 (class 0 OID 221433)
+-- Dependencies: 169
+-- Data for Name: industry; Type: TABLE DATA; Schema: public; Owner: tharshan
+--
+
+COPY industry (id, name) FROM stdin;
+\.
+
+
+--
+-- TOC entry 2239 (class 0 OID 0)
+-- Dependencies: 168
+-- Name: industry_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tharshan
+--
+
+SELECT pg_catalog.setval('industry_id_seq', 1, true);
+
+
+--
+-- TOC entry 2224 (class 0 OID 221439)
+-- Dependencies: 171
+-- Data for Name: job; Type: TABLE DATA; Schema: public; Owner: tharshan
+--
+
+COPY job (id, name) FROM stdin;
+1	Games developer
+2	Gardener
+3	Doctor
+\.
+
+
+--
+-- TOC entry 2240 (class 0 OID 0)
+-- Dependencies: 170
+-- Name: job_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tharshan
+--
+
+SELECT pg_catalog.setval('job_id_seq', 4, true);
+
+
+--
+-- TOC entry 2226 (class 0 OID 221445)
+-- Dependencies: 173
+-- Data for Name: skill; Type: TABLE DATA; Schema: public; Owner: tharshan
+--
+
+COPY skill (id, name) FROM stdin;
+\.
+
+
+--
+-- TOC entry 2241 (class 0 OID 0)
+-- Dependencies: 172
+-- Name: skill_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tharshan
+--
+
+SELECT pg_catalog.setval('skill_id_seq', 1, true);
+
+
+--
+-- TOC entry 2228 (class 0 OID 221451)
+-- Dependencies: 175
+-- Data for Name: tag; Type: TABLE DATA; Schema: public; Owner: tharshan
+--
+
+COPY tag (id, name) FROM stdin;
+\.
+
+
+--
+-- TOC entry 2242 (class 0 OID 0)
+-- Dependencies: 174
+-- Name: tag_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tharshan
+--
+
+SELECT pg_catalog.setval('tag_id_seq', 1, true);
+
+
+--
+-- TOC entry 2230 (class 0 OID 221457)
+-- Dependencies: 177
+-- Data for Name: video; Type: TABLE DATA; Schema: public; Owner: tharshan
+--
+
+COPY video (id, vimeo_url, featured) FROM stdin;
+\.
+
+
+--
+-- TOC entry 2243 (class 0 OID 0)
+-- Dependencies: 176
+-- Name: video_id_seq; Type: SEQUENCE SET; Schema: public; Owner: tharshan
+--
+
+SELECT pg_catalog.setval('video_id_seq', 1, true);
+
+
+--
+-- TOC entry 2212 (class 2606 OID 221462)
+-- Name: industry_pkey; Type: CONSTRAINT; Schema: public; Owner: tharshan; Tablespace: 
+--
+
+ALTER TABLE ONLY industry
+    ADD CONSTRAINT industry_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2214 (class 2606 OID 221464)
+-- Name: job_pkey; Type: CONSTRAINT; Schema: public; Owner: tharshan; Tablespace: 
+--
+
+ALTER TABLE ONLY job
+    ADD CONSTRAINT job_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2216 (class 2606 OID 221466)
+-- Name: skill_pkey; Type: CONSTRAINT; Schema: public; Owner: tharshan; Tablespace: 
+--
+
+ALTER TABLE ONLY skill
+    ADD CONSTRAINT skill_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2218 (class 2606 OID 221468)
+-- Name: tag_pkey; Type: CONSTRAINT; Schema: public; Owner: tharshan; Tablespace: 
+--
+
+ALTER TABLE ONLY tag
+    ADD CONSTRAINT tag_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2220 (class 2606 OID 221470)
+-- Name: video_pkey; Type: CONSTRAINT; Schema: public; Owner: tharshan; Tablespace: 
+--
+
+ALTER TABLE ONLY video
+    ADD CONSTRAINT video_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2237 (class 0 OID 0)
+-- Dependencies: 5
+-- Name: public; Type: ACL; Schema: -; Owner: tharshan
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM tharshan;
+GRANT ALL ON SCHEMA public TO tharshan;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2013-10-20 12:13:42 BST
+
+--
+-- PostgreSQL database dump complete
+--
+

@@ -16,7 +16,7 @@
 */
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $config['base_url'] = sprintf('http://%s/beaspaceman', $_SERVER['HTTP_HOST']);
-}else if ($_SERVER['SERVER_NAME'] == 'wannabeaspaceman'){
+}else{
     $config['base_url'] = sprintf('http://%s', $_SERVER['HTTP_HOST']);
 }
 

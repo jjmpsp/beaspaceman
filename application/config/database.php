@@ -50,8 +50,8 @@ $active_record = TRUE;
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $db['default']['hostname'] = 'localhost';
     $db['default']['username'] = 'root';
-    $db['default']['password'] = '';
-    $db['default']['database'] = 'beaspaceman';
+    $db['default']['password'] = 'root';
+    $db['default']['database'] = 'wannabeaspaceman';
     $db['default']['dbdriver'] = 'mysql';
     $db['default']['dbprefix'] = '';
     $db['default']['pconnect'] = TRUE;
