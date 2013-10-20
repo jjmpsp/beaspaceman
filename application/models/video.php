@@ -37,6 +37,7 @@
 
 		function get_featured(){
 			$this->db->where('featured', '1');
+			$this->db->order_by('id','desc');
             $query = $this->db->get('video', 9);
             return $query->result();
 		}
