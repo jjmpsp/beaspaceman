@@ -16,6 +16,12 @@
 	        }
 	    }
 
+	    public function random_job_get()
+	    {
+	        $this->load->model("jobs");
+			$this->response($this->jobs->random_job());
+	    }
+
 	}
 
 ?>

@@ -25,5 +25,13 @@
             $query = $this->db->get('job');
             return $query->result();
         }
+
+        function random_job()
+        {
+            $this->db->order_by('job_id', 'RANDOM');
+            $this->db->limit(1);
+            $query = $this->db->get('job_video');
+            return $query->row_array(); 
+        }
     }
 ?>

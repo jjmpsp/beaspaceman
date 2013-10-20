@@ -53,6 +53,8 @@ class Main extends CI_Controller {
 	public function view_video(){
 		$this->load->helper('url');
 		$this->load->view('view_video');
+
+
 	}
 
 	public function test(){
@@ -79,6 +81,18 @@ class Main extends CI_Controller {
 
 		$this->load->view('job_search', $data);		
 	}
+
+	public function inspiration()
+	{
+		$this->load->helper("url");
+		$this->load->model("jobs");
+
+		$term = $this->input->get('job_name');
+		$data['allJobs'] = $this->jobs->jobs_by_name($term);
+
+		$this->load->view('inspiration', $data);		
+	}
+
 }
 
 /* End of file welcome.php */
