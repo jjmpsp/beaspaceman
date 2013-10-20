@@ -23,11 +23,11 @@
   <body>
     <div class="container">
 		<div class="row">
-			
+
 			<div class="search">
-				
+
 				<img src="<?php echo base_url();?>static/images/logo.png" width="20%" height="20%" style="padding-bottom: 20px;">
-				
+
 				<div class="form-group">
                     <form action="job_search" method="GET">
                         <input class="form-control input-hg" type="search" id="search_box" name="job_name" placeholder="">
@@ -72,14 +72,14 @@
 
         <footer>
             <div class="container">
-                
+
                     <div class="pull-left">
                         &copy; Wanna be a spaceman 2013
                     </div>
                     <div class="pull-right">
-                        About
-                        Contact
-                        The team
+                        <a href="/about">About</a> &#149;
+                        <a href="#">Contact</a> &#149;
+                        <a href="/team">The Team</a>
                     </div>
                     <div class="clear"></div>
             </div>
@@ -161,7 +161,7 @@
             });
 
             $("#inspiration_button").click(function(){
-                
+
                 $.ajax({
                     url: "<?php echo base_url(); ?>ajax/random_job",
                     data: {
@@ -169,7 +169,7 @@
                     },
                     context: document.body,
                     success: function(data){
-                        window.location.href = "<?php echo base_url(); ?>view_video/?job_id=" +data.job_id;    
+                        window.location.href = "<?php echo base_url(); ?>view_video/?job_id=" +data.job_id;
                     }
                 });
 
