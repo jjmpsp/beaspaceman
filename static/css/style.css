@@ -7,6 +7,7 @@ body{
     background-color: #48b29e;
 }
 
+
 .container{
 	max-width: 970px !important;
 }
@@ -62,8 +63,9 @@ body{
 	padding: 15px 20px 0 ;
 }
 
-.related-videos{
-
+.related-videos ul{
+	padding: 0;
+	margin: 0;
 }
 
 .thumbnails{
