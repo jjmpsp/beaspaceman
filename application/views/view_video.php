@@ -40,13 +40,13 @@
     <div class="container">
 		
 			<div class="col-md-9" style="margin-bottom: 20px;">
-				<iframe src="http://player.vimeo.com/video/75809732" width="100%" height="530" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				<iframe src="http://player.vimeo.com/video/<?php echo $jobDetails["vimeo_url"]; ?>" width="100%" height="530" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 				</br>
 				<div class="video-description">
-					<h6>Job Title</h6>					
-					<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>			
+					<h6>I'm a <?php echo $jobDetails["name"]; ?></h6>					
+					<p>"<?php echo $jobDetails["description"]; ?>"</p>			
 					<h6>Tags</h6>
-					<input name="tagsinput" id="tagsinput" class="tagsinput" value="Nurse, Doctor, Medical, Chemistry, Biology" />
+					<input name="tagsinput" id="tagsinput" class="tagsinput" value="<?php echo $jobDetails["tags"]; ?>" />
 				</div>
 			</div>
 			

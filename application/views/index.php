@@ -48,18 +48,20 @@
         			<ul class="thumbnails" id="caption-hover" type="none">
                         <?php
                             foreach($featuredVideos as $video){
-                                echo '           
-                                <li class="col-md-4">
-                                    <div class="thumbnail">
-                                        <div class="caption">
-                                            <h4>I\'m a...</h4>
-                                            <p>Doctor</p>
+                                echo '  
+                                <a href="'.base_url().'view_video/?job_id=1607">       
+                                    <li class="col-md-4">
+                                        <div class="thumbnail">
+                                            <div class="caption">
+                                                <h4>I\'m a...</h4>
+                                                <p>Doctor</p>
+                                            </div>
+                                            
+                                            <img src="'.$video->thumbnail.'" />
+                                            
                                         </div>
-                                        
-                                        <img src="'.$video->thumbnail.'" />
-                                        
-                                    </div>
-                                </li>';
+                                    </li>
+                                </a>';
                             }
                         ?>
         			</ul>

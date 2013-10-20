@@ -52,9 +52,12 @@ class Main extends CI_Controller {
 	
 	public function view_video(){
 		$this->load->helper('url');
-		$this->load->view('view_video');
+		$this->load->model("jobs");
 
+		$job_id = $this->input->get('job_id');
+		$data['jobDetails'] = $this->jobs->job_details($job_id);
 
+		$this->load->view('view_video', $data);
 	}
 
 	public function test(){
