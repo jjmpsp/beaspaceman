@@ -38,11 +38,17 @@ body{
 	position: relative;
 	float: left;
 }
-
+.search h1 {
+    padding-top:40px;
+}
 .back a{
 	color: white;
 }
-
+.about {
+    color: white;
+    padding-top:150px;
+    font: 80px/90px;
+}
 .intro{
 	text-align: center;
 	font: 70px/80px;
