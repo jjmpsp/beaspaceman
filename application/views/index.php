@@ -22,158 +22,72 @@
   </head>
   <body>
     <div class="container">
-
 		<div class="row">
-				<div class="search">
-					<div class="form-group">
-                        <form action="job_search" method="GET">
-                            <input class="form-control input-hg" type="search" id="search_box" name="job_name" placeholder="placeholder">
-                            <span class="input-icon fui-search"></span>
-                        </form>
-					</div>
+			<div class="search">
+				<div class="form-group">
+                    <form action="job_search" method="GET">
+                        <input class="form-control input-hg" type="search" id="search_box" name="job_name" placeholder="">
+                        <span class="input-icon fui-search"></span>
+                    </form>
 				</div>
+			</div>
 		</div>
 		<div class="row">
 			<div class="intro">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-		</div>
+				<p>Wanna Be A Spaceman is a tool for helping you...</p>
+            </div>
+        	</div>
+                <div class="row">
+        			<ul class="thumbnails" id="caption-hover" type="none">
+                        <?php
+                            foreach($featuredVideos as $video){
+                                echo '           
+                                <li class="col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="caption">
+                                        <h4>Caption</h4>
+                                        <p>sample text</p>
+                                        </div>
+                                        
+                                        <img src="'.$video->thumbnail.'" />
+                                        
+                                    </div>
+                                </li>';
+                            }
+                        ?>
+        			</ul>
+                </div>
+        	</div>
+        </div>
 
-<div class="row">
-			<ul class="thumbnails" id="caption-hover" type="none">
-<<<<<<< HEAD
 
-                <?php
-                    foreach($featuredVideos as $video){
-                        echo '           
-                        <li class="col-md-4">
-                            <div class="thumbnail">
-                                <div class="caption">
-                                <h4>Caption</h4>
-                                <p>sample text</p>
-                                </div>
-                                
-                                <img src="'.$video->thumbnail.'" />
-                                
-                            </div>
-                        </li>';
-                    }
-                ?>
-=======
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-
-						<img src="static/images/video/poster.jpg" />
-
-					</div>
-				</li>
-
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-						<img src="static/images/video/poster.jpg" />
-					</div>
-				</li>
-
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-
-						<img src="static/images/video/poster.jpg" />
-
-					</div>
-				</li>
-
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-
-						<img src="static/images/video/poster.jpg" />
-
-					</div>
-				</li>
-
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-						<img src="static/images/video/poster.jpg" />
-					</div>
-				</li>
-
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-
-						<img src="static/images/video/poster.jpg" />
-
-					</div>
-				</li>
-
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-
-						<img src="static/images/video/poster.jpg" />
-
-					</div>
-				</li>
-
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-						<img src="static/images/video/poster.jpg" />
-					</div>
-				</li>
-
-				<li class="col-md-4">
-					<div class="thumbnail">
-						<div class="caption">
-						<h4>Caption</h4>
-						<p>sample text</p>
-						</div>
-
-						<img src="static/images/video/poster.jpg" />
-
-					</div>
-				</li>
-
->>>>>>> 4a3054c552a096312d0b25f3d5625603943488f7
-			</ul>
-		</div>
+        <footer>
+            <div class="container">
+                
+                    <div class="pull-left">
+                        &copy; Wanna be a spaceman 2013
+                    </div>
+                    <div class="pull-right">
+                        About
+                        Contact
+                        The team
+                    </div>
+                    <div class="clear"></div>
+            </div>
+        </footer>
 
     </div>
     <!-- /.container -->
 
-
     <!-- Load JS here for greater good =============================-->
     <script src="static/js/jquery-1.8.3.min.js"></script>
-    <script src="static/js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="static/js/jquery.ui.touch-punch.min.js"></script>
+    <!--<script src="static/js/jquery-ui-1.10.3.custom.min.js"></script>-->
+    <!-- <script src="static/js/jquery.ui.touch-punch.min.js"></script> -->
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
     <script src="static/js/bootstrap.min.js"></script>
     <script src="static/js/bootstrap-select.js"></script>
     <script src="static/js/bootstrap-switch.js"></script>
@@ -201,7 +115,42 @@
             },
             30);
 
-        })
+            $("#search_box" ).autocomplete({
+                source: function( request, response ) {
+                    $.ajax({
+                        url: "ajax/jobs_search/",
+                        dataType: "json",
+                        data: {
+                            //featureClass: "P",
+                            //style: "full",
+                            //maxRows: 12,
+                            job_name: request.term,
+                            format  : "json"
+                        },
+                        success: function( data ) {
+                            response( $.map( data, function( item ) {
+                                return {
+                                    //label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
+                                    value: item.name
+                                }
+                             }));
+                        }
+                    });
+                },
+                minLength: 2,
+                select: function( event, ui ) {
+                    log( ui.item ?
+                    "Selected: " + ui.item.label :
+                    "Nothing selected, input was " + this.value);
+                },
+                open: function() {
+                    $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+                },
+                close: function() {
+                    $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+                }
+            });
+        });
     </script>
 
   </body>
