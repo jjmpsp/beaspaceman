@@ -43,6 +43,7 @@ $route['404_override'] = '';
 $route['job_search'] = "main/job_search";
 $route['feedback'] = "main/feedback";
 $route['about'] = "main/about";
+$route['team'] = "main/team";
 $route['test'] = "main/test";
 $route['video'] = "main/video";
 $route['view_video'] = "main/view_video";
